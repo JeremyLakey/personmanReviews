@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
+
+
+
+/*Body style for all screens */
+body {
+	background-color:#F5CF8E;
+}
+
+
+
+a {
+	text-decoration:none;
+}
+
+
+/* links change to white if hoved over*/
+a:hover {
+	color: #FFFFFF; /* White */
+
+}
+
+
+
+li {
+	float:left;
+}
+
+
+/* Web site title Sytle */
+#title {
+	font: "Fira Sans", serif;
+	font-size: 80px;
+	color: #9f86a1;
+	justify-content: flex-start;
+	margin-right: 90px;
+}
+
+
+/*top flex box system */
+#top {
+	display: flex;	
+}
+
+#top:first_child {
+	width:100%;
+}
+
+
+/* top bootstrap menu for all pages */
+.menu {
+	background-color: #c9ffc3;
+	list-style-type: none;
+	height: auto;
+	flex: 1;
+	object-fit: cover;	
+	white-space: nowrap;
+}
+
+.menuItem {
+	
+	text-decoration:none;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom:20px;
+}
+.menuItem:hover {
+	background-color: #f0f8ff;
+}
+
+.menuItem a {
+	color: #1c8650;
+	font-size: 30px;
+	display: inline-block;
+}
+
+
+.footer {
+	color: #888888;
+	background-color: #FFFFFF; /*change later*/
+	list-style-type: none;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+}
+
+
+.footerItem a {
+	color: #a66da0;
+	margin: 10px;
+	
+}
+
+.footerItem a:hover {
+	color: #3333DF
+}
+

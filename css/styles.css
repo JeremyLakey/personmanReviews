@@ -60,17 +60,17 @@ li {
 }
 
 
-/* Web site title Sytle */
+/* Web site title Sytle (Kate Photography*/
 #title {
 	font: "Fira Sans", serif;
 	font-size: 80px;
-	color: #9f86a1;
+	color: #000000;
 	justify-content: flex-start;
 	margin-right: 90px;
 }
 
 
-/*top flex box system */
+/*top flex box system, holds the Kate Photography and second menu */
 #top {
 	display: flex;	
 }
@@ -80,7 +80,7 @@ li {
 }
 
 
-/* top bootstrap menu for all pages */
+/* personal made menu for all pages */
 .menu {
 	background-color: #c9ffc3;
 	list-style-type: none;
@@ -89,6 +89,7 @@ li {
 	object-fit: cover;	
 	white-space: nowrap;
 }
+
 
 .menuItem {
 	
@@ -123,10 +124,89 @@ li {
 .footerItem a {
 	color: #a66da0;
 	margin: 10px;
-	
+	margin-right: 70px;
+	margin-bottom: 40px;
+	padding-bottom: 20;
+	font-size: 30px;	
 }
 
 .footerItem a:hover {
 	color: #3333DF
+}
+
+
+#intro {
+	display:flex;
+}
+
+#intro h1 {
+	text-align: center;
+	font: 1.8em "Arial", sans-serif;
+	color: #222222;
+	margin-top: 50px;
+}
+
+#intro p {
+	text-align: center;
+	font: 1.5em "Arial", sans-serif;
+	color: #222222;
+}
+
+#intro:first-child {
+	justify-content: center;
+	align-items:center;
+}
+
+#intro div {
+	flex:flex-end;
+	margin-left: 10px;
+}
+
+
+/*makes image size adjust to screen size*/
+img {
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+
+/*more specific ids and classes*/
+#portfolio {
+	font-size:70px;
+	margin:30px;
+	text-align: center;
+}
+
+#aboutHead {
+	font-size: xxx-large;
+	margin: 40px;
+}
+
+#aboutParagraph {
+	font-size: 25px;
+	margin: 20px;
+	text-align: center;
+}
+
+#email {
+	font-size: 20px;
+	margin: 20px;
+	text-align: center;
+}
+
+#reviewsTitle {
+	font-size: xxx-large;
+	margin: 40px;
+	text-align: center;
+}
+
+/* class for reviews */
+.review {
+	font-size: x-large;
+	margin: 40px;
+	text-align: center;
 }
 

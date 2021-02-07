@@ -6,50 +6,55 @@
 
 
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
-}
 
-
-
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
-}
-
-
-
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  body {
-    background-color: #B2D6FF; /* Blue */
-  }
-}
-
-
-
-/*Body style for all screens */
+/*Body style for all screens, but focus on desktop */
 body {
-	background-color:#F5CF8E;
+	background-color:#F0F0F0;
+	padding-bottom: 80px;
 }
 
+
+h1 {
+	text-align: center;
+	text-decoration: none;
+	text-underline-offset: 15px;
+
+	font: 3.5em "Arial", sans-serif;
+	color: #4e4e4e;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}
+
+
+h2 {
+	text-align: center;
+	color: #4e4e4e;
+	font: 2.5em "Arial", serif;
+	margin: 30px;
+	margin-top: 50px;
+}
+
+h3 {
+	text-align: center;
+	color: #4e4e4e;
+	font: 2.3em "Arial", serif;
+}	
+
+
+p { 
+	color: #666666;
+}
 
 
 a {
-	text-decoration:none;
+	text-decoration: none;
+	color: inherit;
 }
 
 
 /* links change to white if hoved over*/
 a:hover {
-	color: #FFFFFF; /* White */
+	color: #aaaaaa; /* White */
 
 }
 
@@ -60,19 +65,24 @@ li {
 }
 
 
-/* Web site title Sytle (Kate Photography*/
+/* Web site title Style "Personman Reviews"*/
 #title {
 	font: "Fira Sans", serif;
-	font-size: 80px;
-	color: #000000;
+	font-size: 60px;
+	color: #555555;
 	justify-content: flex-start;
 	margin-right: 90px;
+	margin-left: 90px;
+	text-decoration: none;
 }
 
 
 /*top flex box system, holds the Kate Photography and second menu */
 #top {
 	display: flex;	
+	background-color: #FFFFFF;
+	border: solid #d7f3f6;
+	border-width:  8px 12px 12px 12px;
 }
 
 #top:first_child {
@@ -82,7 +92,7 @@ li {
 
 /* personal made menu for all pages */
 .menu {
-	background-color: #c9ffc3;
+	
 	list-style-type: none;
 	height: auto;
 	flex: 1;
@@ -92,7 +102,7 @@ li {
 
 
 .menuItem {
-	
+	text-font: 45px;
 	text-decoration:none;
 	margin-right: 30px;
 	margin-left: 30px;
@@ -104,8 +114,8 @@ li {
 }
 
 .menuItem a {
-	color: #1c8650;
-	font-size: 30px;
+	color: #777777;
+	font-size: 50px;
 	display: inline-block;
 }
 
@@ -122,91 +132,159 @@ li {
 
 
 .footerItem a {
-	color: #a66da0;
+	color: #d1d1d1;
 	margin: 10px;
 	margin-right: 70px;
 	margin-bottom: 40px;
-	padding-bottom: 20;
+	padding-bottom: 20px;
 	font-size: 30px;	
 }
 
 .footerItem a:hover {
-	color: #3333DF
+	color: #979797;
+	text-decoration:none;
 }
 
 
-#intro {
-	display:flex;
-}
 
-#intro h1 {
-	text-align: center;
-	font: 1.8em "Arial", sans-serif;
-	color: #222222;
-	margin-top: 50px;
-}
+
 
 #intro p {
-	text-align: center;
+	text-align: Left;
 	font: 1.5em "Arial", sans-serif;
-	color: #222222;
+	color: #666666;
+	line-height: 200%;
+	margin-bottom: 15px;
+	margin-right: 100px;
+	margin-left: 100px;
 }
 
-#intro:first-child {
-	justify-content: center;
-	align-items:center;
+
+#intro div h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-#intro div {
-	flex:flex-end;
-	margin-left: 10px;
-}
+
 
 
 /*makes image size adjust to screen size*/
 img {
+	
+	max-width: 500px;
+	max-height: 600px;
+	height: auto;
+	object-fit: cover;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 75px;
+	margin-left: 75px;
+
+	border: solid #d7f3f6;
+	border-width:  8px 12px 12px 12px;
+}
+
+
+
+#intro div img {
+
+	display: block;
+	margin-right: auto;
+	margin-left: auto;	
+}
+
+
+
+/* menu text size*/
+.nav-link {
+	font-size: 1.8em;
+}
+
+
+.color-link {
+	color: #9999ff;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*____________________________________________Phone size screens______________________________________________________*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 48em) {
+	
+h1 {
+	margin: 20px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+h2 {
+	margin-top: 20px;
+	font-size: 20px;
+}
+ 
+
+
+/*Personman Reviews*/
+#title {
+	font: "Fira Sans", serif;
+	font-size: 30px;
+	color: #555555;
+	justify-content: flex-end;
+	text-decoration: none;
+	margin-right: 0px;
+	margin-left: 10px;
+	}
+
+#intro p {
+	text-align: center;
+	font: 1em "Arial", sans-serif;
+	color: #666666;
+	line-height: 200%;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+img {
 	width: 100%;
 	height: auto;
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 30px;
+	margin-right: 0;
+	margin-left: 0;
+
+	border: solid #d7f3f6;
+	border-width:  8px 12px 12px 12px;
+}
+
+
+.footer {
+	width: auto;
+}
+
+.footerItem a {
+	color: #d1d1d1;
+	margin: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	font-size: 1em;	
+}
+
+
+.nav-link {
+	font-size: 1.2em;
 }
 
 
 
-/*more specific ids and classes*/
-#portfolio {
-	font-size:70px;
-	margin:30px;
-	text-align: center;
 }
 
-#aboutHead {
-	font-size: xxx-large;
-	margin: 40px;
-}
 
-#aboutParagraph {
-	font-size: 25px;
-	margin: 20px;
-	text-align: center;
-}
 
-#email {
-	font-size: 20px;
-	margin: 20px;
-	text-align: center;
-}
 
-#reviewsTitle {
-	font-size: xxx-large;
-	margin: 40px;
-	text-align: center;
-}
-
-/* class for reviews */
-.review {
-	font-size: x-large;
-	margin: 40px;
-	text-align: center;
-}
 
